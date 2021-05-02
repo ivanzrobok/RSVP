@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IndeTeest</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @ViewBag.Greeting
+        World (from view)
+        <div>
+            <h3>We're going to have an exciting party </h3>
+            <h4>And you are invited</h4>
+        </div>
+        <a class="btn-primary" asp-action="RsvpForm">Rsvp Now</a><!--Силка на метод в контроллері-->
+    </div>
+</body>
+</html>
+
+
+

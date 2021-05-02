@@ -1,0 +1,34 @@
+﻿
+
+@model IEnumerable<WebAppMvc.Models.GuestResponse>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Responses</title>
+</head>
+<body>
+    <h2>Here is the list of people attending the party</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (WebAppMvc.Models.GuestResponse rep in Model)
+            {
+            <tr>
+                <td>@rep.Name</td>
+                <td>@rep.Email</td>
+                <td>@rep.Phone</td>
+            </tr>
+            }
+            </tbody>
+        </table>
+</body>
+</html>
