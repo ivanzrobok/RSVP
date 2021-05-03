@@ -7,8 +7,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Thanks</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
-<body>
+<body class="text-center">
     <p>
         <h1>Thank you, @Model.Name !</h1>
         @if(Model.WillAttend == true)
@@ -20,7 +23,7 @@
                 @:Sorry to hear that you can't make it, but for letting us know.
             }
     </p>
-    <p>Click <a asp-action="ListResponses">here</a>to see who is coming.</p>
+    Click <a asp-action="ListResponses">here</a>to see who is coming.
 </body>
 </html>
 
